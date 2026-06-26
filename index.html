@@ -111,7 +111,23 @@ body::after{
     transparent 1px, transparent 32px);
 }
 
-body::-webkit-scrollbar{ width:0; height:0; }
+/* hide scrollbars on webkit browsers (Chrome, Safari, Edge) — the page is designed
+   to be scrolled, but the scrollbars are visually distracting and not needed 
+body::-webkit-scrollbar{ width:0; height:0; } */
+
+/* optional: custom scrollbar styling for webkit browsers */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.2);
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,.35);
+}
 
 ::selection{ background:var(--red); color:#fff; }
 
