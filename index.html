@@ -31,7 +31,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800;900&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="..css/main.css">
+<link rel="stylesheet" href="..css/cheatsheet.css">
 
 </head>
 <body>
@@ -46,30 +47,21 @@
 </div>
 
 <!-- nav -->
-<header class="nav">
-  <div class="wrap nav__row">
-    <div class="nav__mark"><span class="pulse">●</span> SPLITTAH'S CHEATSHEET</div>
-    <div class="nav__meta">
-      <span class="stamp">FIELD MANUAL / v5.0.0</span>
-      <a class="nav__ig" href="https://www.instagram.com/splittahmusic" target="_blank" rel="noopener noreferrer" aria-label="Splittah on Instagram (opens in a new tab)">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <rect x="2.5" y="2.5" width="19" height="19" rx="5.2" fill="none" stroke="currentColor" stroke-width="2"/>
-          <circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="2"/>
-          <circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/>
-        </svg>
-      </a>
-      <button type="button" class="nav__pdf" id="downloadPdf" aria-label="Download this cheatsheet as a PDF">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M12 3v11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <path d="M7.5 9.5L12 14l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M4.5 18.5h15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <span>PDF</span>
-      </button>
-      <a class="nav__top" href="#contents">Contents</a>
+<nav class="site-nav" aria-label="Site navigation">
+  <details class="site-nav__menu">
+    <summary>Menu</summary>
+    <div class="site-nav__links">
+      <a href="/">Home</a>
+      <a href="/djcheatsheet/">DJ Cheatsheet</a>
+      /* commented out links not yet active
+       <a href="/mixes/">Mixes</a>
+      <a href="/epk/">EPK</a>
+      <a href="/bookings/">Bookings</a>
+      */
+      <a href="https://www.instagram.com/splittahmusic/" target="_blank" rel="noopener noreferrer">Instagram</a>
     </div>
-  </div>
-</header>
+  </details>
+</nav>ß
 
 <!-- HERO -->
 <section class="hero">
@@ -115,47 +107,47 @@
 <!-- BODY -->
 <div class="wrap shell">
 
-  <!-- TOC rail -->
-  <aside class="toc" id="contents">
-    <nav class="toc--desktop" aria-label="Sections">
-      <p class="toc__title"><span class="pulse">●</span> CONTENTS / 14 CH</p>
-      <ul class="toc__list" id="tocList">
-        <li><a href="#s01"><span class="toc__n">01</span> Sort Your Shit</a></li>
-        <li><a href="#s02"><span class="toc__n">02</span> Prep It Like You Mean It</a></li>
-        <li><a href="#s03"><span class="toc__n">03</span> Playlist Alchemy</a></li>
-        <li><a href="#s04"><span class="toc__n">04</span> Device Library vs OneLibrary</a></li>
-        <li><a href="#s05"><span class="toc__n">05</span> Hardware Tips &amp; Tricks</a></li>
-        <li><a href="#s06"><span class="toc__n">06</span> Pro DJ Link</a></li>
-        <li><a href="#s07"><span class="toc__n">07</span> Bags, Booth &amp; Bunnies</a></li>
-        <li><a href="#s08"><span class="toc__n">08</span> Break Ya Neck, Not Ya Ears</a></li>
-        <li><a href="#s09"><span class="toc__n">09</span> Music Pools</a></li>
-        <li><a href="#s10"><span class="toc__n">10</span> Press Kit / EPK</a></li>
-        <li><a href="#s11"><span class="toc__n">11</span> Harmonic Mixing</a></li>
-        <li><a href="#s12"><span class="toc__n">12</span> Moving Your Database</a></li>
-        <li><a href="#s13"><span class="toc__n">13</span> Backup Your Shit</a></li>
-        <li><a href="#s14"><span class="toc__n">14</span> Troubleshooting</a></li>
-        <li><a href="#appendix"><span class="toc__n">A+</span> Appendix · My Settings</a></li>
+  <!-- manual-index rail -->
+  <aside class="manual-index" id="contents">
+    <nav class="manual-index--desktop" aria-label="Sections">
+      <p class="manual-index__title"><span class="pulse">●</span> CONTENTS / 14 CH</p>
+      <ul class="manual-index__list" id="tocList">
+        <li><a href="#s01"><span class="manual-index__n">01</span> Sort Your Shit</a></li>
+        <li><a href="#s02"><span class="manual-index__n">02</span> Prep It Like You Mean It</a></li>
+        <li><a href="#s03"><span class="manual-index__n">03</span> Playlist Alchemy</a></li>
+        <li><a href="#s04"><span class="manual-index__n">04</span> Device Library vs OneLibrary</a></li>
+        <li><a href="#s05"><span class="manual-index__n">05</span> Hardware Tips &amp; Tricks</a></li>
+        <li><a href="#s06"><span class="manual-index__n">06</span> Pro DJ Link</a></li>
+        <li><a href="#s07"><span class="manual-index__n">07</span> Bags, Booth &amp; Bunnies</a></li>
+        <li><a href="#s08"><span class="manual-index__n">08</span> Break Ya Neck, Not Ya Ears</a></li>
+        <li><a href="#s09"><span class="manual-index__n">09</span> Music Pools</a></li>
+        <li><a href="#s10"><span class="manual-index__n">10</span> Press Kit / EPK</a></li>
+        <li><a href="#s11"><span class="manual-index__n">11</span> Harmonic Mixing</a></li>
+        <li><a href="#s12"><span class="manual-index__n">12</span> Moving Your Database</a></li>
+        <li><a href="#s13"><span class="manual-index__n">13</span> Backup Your Shit</a></li>
+        <li><a href="#s14"><span class="manual-index__n">14</span> Troubleshooting</a></li>
+        <li><a href="#appendix"><span class="manual-index__n">A+</span> Appendix · My Settings</a></li>
       </ul>
     </nav>
 
-    <details class="toc--mobile">
+    <details class="manual-index--mobile">
       <summary>Contents · 14 sections <span aria-hidden="true">▾</span></summary>
       <ul class="toc__list">
-        <li><a href="#s01"><span class="toc__n">01</span> Sort Your Shit</a></li>
-        <li><a href="#s02"><span class="toc__n">02</span> Prep It Like You Mean It</a></li>
-        <li><a href="#s03"><span class="toc__n">03</span> Playlist Alchemy</a></li>
-        <li><a href="#s04"><span class="toc__n">04</span> Device Library vs OneLibrary</a></li>
-        <li><a href="#s05"><span class="toc__n">05</span> Hardware Tips &amp; Tricks</a></li>
-        <li><a href="#s06"><span class="toc__n">06</span> Pro DJ Link</a></li>
-        <li><a href="#s07"><span class="toc__n">07</span> Bags, Booth &amp; Bunnies</a></li>
-        <li><a href="#s08"><span class="toc__n">08</span> Break Ya Neck, Not Ya Ears</a></li>
-        <li><a href="#s09"><span class="toc__n">09</span> Music Pools</a></li>
-        <li><a href="#s10"><span class="toc__n">10</span> Press Kit / EPK</a></li>
-        <li><a href="#s11"><span class="toc__n">11</span> Harmonic Mixing</a></li>
-        <li><a href="#s12"><span class="toc__n">12</span> Moving Your Database</a></li>
-        <li><a href="#s13"><span class="toc__n">13</span> Backup Your Shit</a></li>
-        <li><a href="#s14"><span class="toc__n">14</span> Troubleshooting</a></li>
-        <li><a href="#appendix"><span class="toc__n">A+</span> Appendix · My Settings</a></li>
+        <li><a href="#s01"><span class="manual-index__n">01</span> Sort Your Shit</a></li>
+        <li><a href="#s02"><span class="manual-index__n">02</span> Prep It Like You Mean It</a></li>
+        <li><a href="#s03"><span class="manual-index__n">03</span> Playlist Alchemy</a></li>
+        <li><a href="#s04"><span class="manual-index__n">04</span> Device Library vs OneLibrary</a></li>
+        <li><a href="#s05"><span class="manual-index__n">05</span> Hardware Tips &amp; Tricks</a></li>
+        <li><a href="#s06"><span class="manual-index__n">06</span> Pro DJ Link</a></li>
+        <li><a href="#s07"><span class="manual-index__n">07</span> Bags, Booth &amp; Bunnies</a></li>
+        <li><a href="#s08"><span class="manual-index__n">08</span> Break Ya Neck, Not Ya Ears</a></li>
+        <li><a href="#s09"><span class="manual-index__n">09</span> Music Pools</a></li>
+        <li><a href="#s10"><span class="manual-index__n">10</span> Press Kit / EPK</a></li>
+        <li><a href="#s11"><span class="manual-index__n">11</span> Harmonic Mixing</a></li>
+        <li><a href="#s12"><span class="manual-index__n">12</span> Moving Your Database</a></li>
+        <li><a href="#s13"><span class="manual-index__n">13</span> Backup Your Shit</a></li>
+        <li><a href="#s14"><span class="manual-index__n">14</span> Troubleshooting</a></li>
+        <li><a href="#appendix"><span class="manual-index__n">A+</span> Appendix · My Settings</a></li>
       </ul>
     </details>
   </aside>
