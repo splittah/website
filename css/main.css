@@ -173,41 +173,66 @@ hr.hair{ border:0; border-top:1px dashed var(--hair-strong); margin:0; }
 .nav__pdf svg{ width:14px; height:14px; display:block; }
 @media(min-width:760px){ .nav__meta .stamp{ display:inline; } }
 
+
+/* ── site nav ───────────────────────────────────────────────────────────── */
+
 .site-nav {
   position: relative;
-  margin-top:8px;
 }
 
 .site-nav__menu summary {
-  cursor:pointer;
-  list-style:none;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:14px 16px;
-  border:1px solid var(--hair-strong);
-  font-family:var(--mono);
-  font-size:11px;
-  letter-spacing:var(--tr-stamp);
-  text-transform:uppercase;
-  color:var(--chalk-dim);
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: var(--tr-stamp);
+  text-transform: uppercase;
+  color: var(--chalk-dim);
+  border: 1px solid var(--hair-strong);
+  padding: 7px 12px;
 }
 
 .site-nav__menu summary::-webkit-details-marker {
   display: none;
 }
-
-.site-nav__links {
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  min-width: 220px;
-  z-index: 100;
-  display: grid;
-  background: var(--ink-2);
-  border: 1px solid var(--hair-strong);
-  box-shadow: 0 18px 40px rgba(20,22,28,.14);
+.site-nav__list{ 
+  list-style:none; 
+  margin:0; 
+  padding:0; 
+  display:flex; 
+  flex-direction:column; 
 }
+.site-nav__list a{ 
+  display:flex; 
+  gap:11px; 
+  align-items:baseline; 
+  padding:8px 10px;
+  border:0; 
+  border-left:2px solid var(--hair); 
+  color:var(--chalk-dim);
+  font-family:var(--mono); 
+  font-size:12px; 
+  line-height:1.4; 
+  transition:all .14s ease; 
+}
+.site-nav__list a:hover{ 
+  color:var(--chalk); 
+  border-left-color:var(--red);
+  background:var(--red-glow); 
+}
+.site-nav__list a.is-active{ 
+  color:var(--chalk); 
+  border-left-color:var(--red); 
+  background:var(--red-glow); 
+}
+.site-nav__n{ 
+  font-family:var(--mono); 
+  font-size:11px; 
+  color:var(--red); 
+  flex:none; 
+  min-width:2ch; 
+}
+
 
 /* ── HERO : a loaded CDJ deck screen ─────────────────────────────────────── */
 .hero{ padding-block:clamp(38px,7vw,82px) clamp(30px,5vw,58px); }
