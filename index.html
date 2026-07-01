@@ -557,11 +557,11 @@ tbody tr:hover td{ background:var(--red-glow); }
     <div class="deck corners">
       <div class="deck__loadrow">
         <span class="stamp">NOW LOADED — <span class="deck__chan">CH 1</span></span>
-        <span class="stamp">REKORDBOX EXPORT · FAT32 · NAMED</span>
+        <span class="stamp">REKORDBOX EXPORT · FAT32 · USB NAMED</span>
       </div>
 
       <h1>SPLITTAH'S<br>DJ <em>CHEATSHEET</em></h1>
-      <p class="hero__sub">A practical, slightly unhinged guide to DJing, gear, etiquette, and surviving the booth. Pioneer / AlphaTheta and Rekordbox, written by someone ten years and far too many 5am kickons deep.</p>
+      <p class="hero__sub">A practical, slightly unhinged guide to DJing, gear, etiquette, and surviving the booth. Pioneer / AlphaTheta and Rekordbox focused.</p>
 
       <!-- waveform -->
       <svg class="wave" viewBox="0 0 1000 80" preserveAspectRatio="none" role="img" aria-label="Decorative track waveform">
@@ -639,9 +639,10 @@ tbody tr:hover td{ background:var(--red-glow); }
 
     <!-- INTRO -->
     <div class="intro">
-      <p>So you wanna be a DJ? <span class="lead">Sick, you're in the right place.</span> Already spinning but want to level up? Even better.</p>
+      <p>So you wanna be a DJ? <span class="lead">Sick, you're in the right place.</span>
+        <br>Already spinning but want to level up? <span class="lead">Even better.</span></p>
       <p>I wrote this to help DJs sharpen their skills, fix common mistakes, and learn the little tricks that save your ass when shit inevitably goes wrong — whether you're brand new or 10 years deep.</p>
-      <p>I've been DJing for 9 years across clubs, house parties and way too many 5am kickons. This is everything I wish I had known earlier — DJing gets surprisingly technical and there are heaps of quality-of-life hacks no one warns you about. This'll save you time, fill in the gaps, and make your life easier behind the decks.</p>
+      <p>I've been DJing for 10 years across clubs, house parties, festivals and way too many 5am kickons. This is everything I wish I had known earlier — DJing gets surprisingly technical and there are heaps of quality-of-life hacks no one warns you about. This'll save you time, fill in the gaps, and make your life easier behind the decks.</p>
       <p>Most of what follows is geared toward Pioneer DJ / AlphaTheta equipment and Rekordbox workflows, and I'm assuming you already know how to press play and beatmatch.</p>
       <p>If you CBF reading manuals — good, you're my target audience. But trust me: knowing your gear inside and out makes a <em>massive</em> difference, and that's exactly what this guide is here for. Let's get stuck in.</p>
     </div>
@@ -654,18 +655,18 @@ tbody tr:hover td{ background:var(--red-glow); }
       <div class="sub">
         <div class="sub__h"><span class="sub__tag">A</span> Choosing your music file types &amp; quality</div>
         <p>Getting good quality tracks is one of, if not the most important thing about DJing, so let's start there. I want to make one thing very, very clear: YouTube and Soundcloud rips sound like shit on a club system. They're fine for practicing at home, but that's a slippery slope, and I guarantee you'll never replace them with higher-quality copies like you keep telling yourself you will. Just don't do it.</p>
-        <p>Beatport / Bandcamp and Soundcloud / Hypeddit are your friends. At an absolute minimum, you want <strong>320kbps MP3</strong> files. Lossless files like WAVs are great, but they eat USB space quick. FYI, iTunes provides files in 256kb AAC, which is slightly better sound quality than a 320kb MP3 file. Still perfectly fine for DJing, but check the compatibility with the decks you'll be playing on. I'll touch on this later. You can see the bitrate of your tracks once you've imported them into Rekordbox by right-clicking your columns in the browser and making sure that bitrate is ticked.</p>
+        <p>Beatport, Bandcamp and Soundcloud free downloads are your friends. At an absolute minimum, you want <strong>320kbps MP3</strong> files. Lossless files like WAVs are great, but they eat USB space quick. FYI, iTunes provides files in 256kb AAC, which is slightly better sound quality than a 320kb MP3 file. Still perfectly fine for DJing, but check the compatibility with the decks you'll be playing on. I'll touch on this later. You can see the bitrate of your tracks once you've imported them into Rekordbox by right-clicking your columns in the browser and making sure that bitrate is ticked.</p>
       </div>
 
       <div class="sub">
         <div class="sub__h"><span class="sub__tag">B</span> Hard drives</div>
-        <p>Most people start building their library just on their computer's internal hard drive, which is fine when starting out, but as your collection grows you might find yourself running out of space very quickly — especially if you use the computer for other things like gaming or work. Most professional DJs use external hard drives to get around this. Their music collection and Rekordbox database live on an external hard drive/s. A number of benefits:</p>
+        <p>Most people start building their library just on their computer's internal hard drive, which is fine when starting out, but as your collection grows you might find yourself running out of space very quickly — especially if you use the computer for other things like gaming or work. Most professional DJs use external hard drives to get around this. Their music collection and Rekordbox database live on an external hard drive. This method brings a number of benefits:</p>
         <ol>
           <li>If your computer dies or you upgrade and purchase a new computer, you can easily download Rekordbox, plug in your external drive, select the database on it and you're back up and running in less than 10 mins.</li>
           <li>It's easy to create backups of your music collection. Just clone the entire drive — no need to individually select folders on your PC to copy.</li>
         </ol>
-        <p>Let's start with the hard drive format. I recommend <strong>exFAT</strong> for your music collection (FAT32 for your USBs, but I'll talk about that later) because exFAT is compatible with both Mac and Windows. You never know what route you'll go down in future, so it's good to be flexible now (hell, I went from Android to Apple). Use your chosen OS's built-in tools to format the hard drive and name it <em>"YOURDJNAME's Drive"</em>.</p>
-        <p>Next, open Rekordbox and navigate to Preferences using either the gear symbol in the top right or File › Preferences (instructions can vary based on Rekordbox version and OS). Navigate to the Advanced tab (three dots) then Database management, and select your newly formatted external drive. As you have no tracks imported yet this will be quick (I cover moving your library in §12 — warning: the process sucks). Check it worked by navigating to your hard drive in Finder/File Explorer and seeing if a <strong>PIONEER</strong> folder has been created. If there is, excellent. Create a new folder called <strong>Music</strong> or <strong>Contents</strong> on the root of the drive, not within the Pioneer folder. This is where you'll move your music files before importing them into Rekordbox.</p>
+        <p>Let's start with the hard drive format. I recommend <strong>exFAT</strong> for your music collection (FAT32 for your USBs, but I'll talk about that later) because exFAT is compatible with both Mac and Windows. You never know what route you'll go down in future, so it's good to be flexible now (hell, I went from Android to Apple and Windows to Mac). Use your chosen OS's built-in tools to format the hard drive and name it <em>"YOURDJNAME's Drive"</em>.</p>
+        <p>Next, open Rekordbox and navigate to Preferences using either the gear symbol in the top right or File › Preferences (instructions can vary based on Rekordbox version and OS). Navigate to the Advanced tab (three dots) then Database management, and select your newly formatted external drive. As you have no tracks imported yet this will be quick (I cover moving your library in §12 — warning: the process sucks). Check it worked by navigating to your hard drive in Finder/File Explorer and seeing if a <strong>PIONEER</strong> folder has been created. If there is, excellent. Create a new folder called <strong>Music</strong> or <strong>Contents</strong> or <strong>Rekordbox Library</strong> on the root of the drive, not within the Pioneer folder. This is where you'll move your music files before importing them into Rekordbox.</p>
         <div class="call call--warn">
           <div class="call__tag">Fuck-up to avoid</div>
           <p>Don't just download your tracks and drag them from the Downloads folder into Rekordbox. Some PC cleanup tools will just straight up delete everything in there to free up space on your PC.</p>
@@ -999,7 +1000,14 @@ tbody tr:hover td{ background:var(--red-glow); }
 
       <div class="sub">
         <div class="sub__h"><span class="sub__tag">A</span> Pre-game checks</div>
-        <p>Check your DJ bag (not the other bag): headphones · spare 3.5mm-to-¼" jacks · multiple USBs (I carry 4 — two in the bag, two on me) · optional USB booth light for the mixer. Test your USBs before you leave home (§05-F).</p>
+        Check your DJ bag (not the other bag):
+        <ul>
+          <li>Headphones</li>
+          <li>Multiple USBs (I carry 4, 2 in the bag, 2 on me)</li>
+          <li>Spare 3.5mm-to-¼" jacks</li>
+          <li>Optional USB booth light for the mixer</li>
+          <li>Test your USBs before you leave home (§05-F)</li>
+        </ul>
         <div class="call call--warn">
           <div class="call__tag">Real talk</div>
           <p>Don't dabble in substances before you play. A couple of drinks for the nerves is fine — don't get wasted. You're a professional with a reputation and you're a role model whether you realise it or not. No judgment, but there's a time and place.</p>
@@ -1028,7 +1036,7 @@ tbody tr:hover td{ background:var(--red-glow); }
 
       <div class="sub">
         <div class="sub__h"><span class="sub__tag">D</span> Post-set manners · booth boundaries · requests</div>
-        <p>Set's done — enjoy the night. Got another gig? Find the promoter, quick thank you, explain you're ducking off; they'll get it. Can't find them? Shoot a text.</p>
+        <p><strong>Set's done:</strong> enjoy the night! Got another gig? Find the promoter, quick thank you, explain you're ducking off; they'll get it. Can't find them? Shoot a text.</p>
         <p><strong>Booth bunnies:</strong> anyone of any gender's welcome, just no drinks near the decks and give yourself room to work. Too many people don't get the responsibility that comes with being in the booth.</p>
         <p><strong>Denying requests:</strong> you'll cop them at every kind of event, mostly commercial. A girl once asked me for hard techno when the next DJ was about to play UKG. Don't tell them to f*** off (even if you want to) — listen, politely decline, maybe mention it doesn't suit the flow. Get a <em>good</em> request? Get excited: "Hell yeah, let me see if I've got it" (even if you know you don't lol).</p>
       </div>
@@ -1037,8 +1045,17 @@ tbody tr:hover td{ background:var(--red-glow); }
         <div class="sub__h"><span class="sub__tag">E</span> Club owners &amp; networking</div>
         <p>You're paid to provide the entertainment — but without them you're not there. Be professional. They may hand you music guidelines, or tell you to play R&B while the room's loving commercial house. Read the room. Some owners are chill, some are on a power trip. Don't fight them mid-set — be polite, stay flexible, protect your reputation.</p>
         <div class="call call--go">
-          <div class="call__tag">Network without being a flog</div>
-          <p>Don't ask for guest list — ask if there's a discount code. Don't ask for set times — show up early. Don't send unsolicited mixes (same rules as dick pics). Buy a ticket. Stay after your set. Support other DJs. Be easy to work with. Don't be cooked. The music gets you noticed; your reputation gets you booked again.</p>
+          <div class="call__tag">How to network without being a flog</div>
+          <ul>
+            <li>Don't ask for a guest list — ask if there's a discount code.</li>
+            <li>Don't ask for set times — show up early.</li>
+            <li>Don't send unsolicited mixes (same rules as dick pics).</li>
+            <li>Buy a ticket.</li>
+            <li>Stay after your set.</li>
+            <li>Support other DJs.</li>
+            <li>Be easy to work with.</li>
+            <li>Don't be cooked.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -1115,7 +1132,7 @@ tbody tr:hover td{ background:var(--red-glow); }
 
       <div class="sub">
         <div class="sub__h"><span class="sub__tag">B</span> How to share it</div>
-        <p><strong>Option 1 — Google Drive folder.</strong> Name it clearly (<em>YOURNAME_EPK_2025</em>) with subfolders for bio/press PDFs, labelled high-res photos, audio/video links, achievements. Set sharing to "Anyone with the link can view."</p>
+        <p><strong>Option 1 — Google Drive/Dropbox folder.</strong> Name it clearly (<em>YOURNAME_EPK_2025</em>) with subfolders for bio/press PDFs, labelled high-res photos, audio/video links, achievements. Set sharing to "Anyone with the link can view."</p>
         <figure class="fig fig--narrow"><div class="fig__mount corners"><img src="img/image18.png" width="384" height="316" loading="lazy" alt="Google Drive sharing settings set to anyone with the link"></div><figcaption><span class="fig__tag">FIG.18</span><span>Set sharing to "Anyone with the link" — promoters shouldn't have to request access.</span></figcaption></figure>
         <p><strong>Option 2 — ZIP folder.</strong> Same content, neatly organised, compressed and labelled (<em>YOURNAME_EPK.zip</em>). Attach to emails or host on Dropbox/Drive.</p>
         <div class="call call--warn">
