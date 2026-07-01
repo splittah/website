@@ -43,7 +43,7 @@ body::after{
 
 /* Manual Index channel-strip */
 .manual-index{ position:relative; }
-@media(min-width:1000px){ .toc{ position:sticky; top:78px; max-height:calc(100dvh - 96px);
+@media(min-width:1000px){ .manual-index{ position:sticky; top:78px; max-height:calc(100dvh - 96px);
   overflow:auto; padding-right:6px; } }
 .manual-index__title{ display:flex; align-items:center; gap:.7ch; margin:0 0 14px;
   font-family:var(--mono); font-size:10px; letter-spacing:var(--tr-stamp);
@@ -65,9 +65,9 @@ body::after{
   color:var(--chalk-dim); }
 .manual-index--mobile summary::-webkit-details-marker{ display:none; }
 .manual-index--mobile[open] summary{ border-bottom:0; color:var(--red); }
-@media(min-width:1000px){ .toc--mobile{ display:none; } }
+@media(min-width:1000px){ .manual-index--mobile{ display:none; } }
 .manual-index--desktop{ display:none; }
-@media(min-width:1000px){ .toc--desktop{ display:block; } }
+@media(min-width:1000px){ .manual-index--desktop{ display:block; } }
 
 /* ── Camelot wheel signature (§11) ───────────────────────────────────────── */
 .harm{ display:grid; grid-template-columns:1fr; gap:clamp(24px,4vw,44px); align-items:center;
