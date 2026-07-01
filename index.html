@@ -119,8 +119,8 @@
   <!-- manual-index rail -->
   <aside class="manual-index" id="contents">
     <nav class="manual-index--desktop" aria-label="Sections">
-      <p class="manual-index__title"><span class="pulse">●</span> CONTENTS / 14 CH</p>
-      <ul class="manual-index__list" id="tocList">
+      <p class="manual-index__title"><span class="pulse">●</span> MANUAL INDEX / 14 CH</p>
+      <ul class="manual-index__list" id="manual-indexList">
         <li><a href="#s01"><span class="manual-index__n">01</span> Sort Your Shit</a></li>
         <li><a href="#s02"><span class="manual-index__n">02</span> Prep It Like You Mean It</a></li>
         <li><a href="#s03"><span class="manual-index__n">03</span> Playlist Alchemy</a></li>
@@ -140,8 +140,8 @@
     </nav>
 
     <details class="manual-index--mobile">
-      <summary>Contents · 14 sections <span aria-hidden="true">▾</span></summary>
-      <ul class="toc__list">
+      <summary>MANUAL INDEX · 14 sections <span aria-hidden="true">▾</span></summary>
+      <ul class="manual-index__list">
         <li><a href="#s01"><span class="manual-index__n">01</span> Sort Your Shit</a></li>
         <li><a href="#s02"><span class="manual-index__n">02</span> Prep It Like You Mean It</a></li>
         <li><a href="#s03"><span class="manual-index__n">03</span> Playlist Alchemy</a></li>
@@ -826,8 +826,8 @@
     pdfBtn.addEventListener('click', function(){ window.print(); });
   }
 
-  /* TOC scrollspy */
-  var links = Array.prototype.slice.call(document.querySelectorAll('#tocList a'));
+  /* manual index scrollspy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('#manualindexList a'));
   var map = {};
   links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
   if('IntersectionObserver' in window){
