@@ -516,7 +516,7 @@ tbody tr:hover td{ background:var(--red-glow); }
   box-shadow:var(--shadow);
 }
 
-.instagram-grid{
+.single-grid{
   display:grid;
   grid-template-columns:1fr;
   gap:18px;
@@ -525,6 +525,7 @@ tbody tr:hover td{ background:var(--red-glow); }
 .single-card{
   border:1px solid var(--line);
   background:rgba(255,255,255,.72);
+  padding: 22px 24px;
 }
 
 .single-card h3{
