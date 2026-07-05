@@ -11,6 +11,8 @@
   --ink:        #FFFFFF;   /* page — pure white                                 */
   --ink-2:      #FFFFFF;   /* raised surface: cards, cells, callouts            */
   --ink-3:      #F0F1F3;   /* recessed surface: kbd, table head, figure mount   */
+  --line:       rgba(17,19,23,.13);
+  --line-strong:rgba(17,19,23,.24);
   --panel:      #14161B;   /* hero CDJ "screen" — deliberately dark             */
   --panel-2:    #1E222B;
 
@@ -30,6 +32,8 @@
   --display: "Archivo", ui-sans-serif, system-ui, sans-serif;
   --body: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --shadow:0 30px 80px rgba(12,14,18,.12);
 
   --tr-tight: -0.03em;
   --tr-mono: 0.01em;
