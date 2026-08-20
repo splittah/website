@@ -552,6 +552,8 @@ tbody tr:hover td{ background:var(--red-glow); }
   }
 }
 
+/* ── Contact / booking ───────────────────────────────────────────────────── */
+
 .btn{
   display:inline-flex;
   align-items:center;
@@ -560,37 +562,105 @@ tbody tr:hover td{ background:var(--red-glow); }
   padding:0 18px;
   gap:8px;
   border:1px solid transparent;
-  font-weight:600;
+
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+
+  transition:
+    color .14s ease,
+    background .14s ease,
+    border-color .14s ease;
 }
 
 .btn--primary{
   background:var(--red);
-  color:var(--white);
+  color:#fff;
 }
 
 .btn--primary:hover{
   background:var(--red-deep);
+  border-color:var(--red-deep);
+  color:#fff;
 }
 
 .btn--ghost{
-  color:var(--white);
+  color:#EEF1F5;
   background:rgba(255,255,255,.04);
-  border-color:rgba(255,255,255,.2);
+  border-color:rgba(238,241,245,.28);
 }
 
 .btn--ghost:hover{
+  color:#fff;
   background:rgba(255,255,255,.08);
-  border-color:rgba(255,255,255,.38);
+  border-color:rgba(238,241,245,.55);
 }
+
+
+/* Main contact layout */
+
+.booking-panel{
+  display:grid;
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  gap:18px;
+}
+
+.booking-hero{
+  padding:clamp(24px,3vw,34px);
+  color:#EEF1F5;
+  border:1px solid rgba(238,241,245,.18);
+  background:linear-gradient(180deg, var(--panel-2), var(--panel));
+  box-shadow:var(--shadow);
+}
+
+.booking-hero__kicker{
+  color:#AEB5BF;
+}
+
+.booking-hero h3{
+  margin:10px 0 14px;
+  max-width:14ch;
+  color:#EEF1F5;
+
+  font-family:var(--display);
+  font-size:clamp(30px,3.4vw,44px);
+  line-height:.92;
+  letter-spacing:-.05em;
+  text-transform:uppercase;
+}
+
+.booking-hero p{
+  margin:0;
+  max-width:48ch;
+  color:#AEB5BF;
+}
+
+.booking-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:24px;
+}
+
+
+/* Press + cheatsheet cards */
 
 .booking-grid{
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-columns:repeat(2,minmax(0,1fr));
   gap:16px;
 }
 
 .booking-card{
   padding:22px 24px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.72);
+}
+
+.booking-card .mono{
+  color:var(--red);
 }
 
 .booking-card h3{
@@ -604,75 +674,43 @@ tbody tr:hover td{ background:var(--red-glow); }
 
 .booking-card p{
   margin:0;
-}
-
-.booking-card{
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.72);
-}
-
-.booking-card .mono{
-  color:var(--amber);
-}
-
-.booking-panel{
-  display:grid;
-  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
-  gap:18px;
-}
-
-.booking-hero{
-  padding:24px;
-  color:var(--white);
-  border:1px solid rgba(255,255,255,.15);
-  background:linear-gradient(180deg, var(--panel-2), var(--panel));
-}
-
-.booking-hero h3{
-  margin:10px 0;
-  font-family:var(--display);
-  font-size:34px;
-  line-height:.92;
-  letter-spacing:-.05em;
-  text-transform:uppercase;
-}
-
-.booking-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:20px;
-}
-
-@media (max-width: 980px){
-  .booking-grid,
-  .booking-panel{
-    grid-template-columns:1fr;
-  }
-}
-
-@media (max-width: 640px){
-  .btn{
-    width:100%;
-  }
-}
-.contact-links{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  gap:8px;
-  margin-top:14px;
-}
-
-.contact-links a,
-.contact-link{
-  font-family:var(--mono);
-  font-size:11px;
-  letter-spacing:.08em;
-  text-transform:uppercase;
+  color:var(--chalk-dim);
 }
 
 .contact-link{
   display:inline-block;
-  margin-top:16px;
+  margin-top:18px;
+
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+
+/* Responsive */
+
+@media (max-width:980px){
+  .booking-panel{
+    grid-template-columns:1fr;
+  }
+
+  .booking-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width:640px){
+  .booking-grid{
+    grid-template-columns:1fr;
+  }
+
+  .booking-actions{
+    flex-direction:column;
+  }
+
+  .btn{
+    width:100%;
+  }
 }
