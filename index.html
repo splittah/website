@@ -18,6 +18,30 @@
 
 </head>
 
+<script>
+  // Close the site nav menu when clicking outside of it or pressing Escape.
+document.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('.site-nav__menu');
+
+  if (!menu) return;
+
+  document.addEventListener('click', (event) => {
+    if (menu.open && !menu.contains(event.target)) {
+      menu.open = false;
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menu.open) {
+      menu.open = false;
+
+      const summary = menu.querySelector('summary');
+      if (summary) summary.focus();
+    }
+  });
+});
+</script>
+
 <body>
 
 <!-- marquee -->
@@ -31,7 +55,10 @@
 <!-- nav -->
  <header class="nav">
   <div class="wrap nav__row">
-    <div class="nav__mark"><span class="pulse">●</span> Splittah | Official Website</div>
+    <a class="nav__mark" href="/">
+      <span class="pulse">●</span> Splittah | Official Website
+    </a>
+
     <div class="nav__meta">
       <span class="stamp">BASS MUSIC</span>
       

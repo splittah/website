@@ -388,27 +388,27 @@
 </head>
 
 <script>
-  // Nav menu open/close behavior. Closes the menu when clicking outside of it or pressing Escape.
-(function () {
+  // Close the site nav menu when clicking outside of it or pressing Escape.
+document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.site-nav__menu');
 
   if (!menu) return;
 
-  // Close when clicking outside the navigation.
-  document.addEventListener('click', function (event) {
+  document.addEventListener('click', (event) => {
     if (menu.open && !menu.contains(event.target)) {
-      menu.removeAttribute('open');
+      menu.open = false;
     }
   });
 
-  // Close when pressing Escape.
-  document.addEventListener('keydown', function (event) {
+  document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && menu.open) {
-      menu.removeAttribute('open');
-      menu.querySelector('summary').focus();
+      menu.open = false;
+
+      const summary = menu.querySelector('summary');
+      if (summary) summary.focus();
     }
   });
-})();
+});
 </script>
 <body>
 

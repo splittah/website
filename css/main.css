@@ -734,3 +734,13 @@ tbody tr:hover td{ background:var(--red-glow); }
   padding-left: 28px !important;
   font-size: 11px;
 }
+
+.nav__mark {
+  color: inherit;
+  border-bottom: 0;
+}
+
+.nav__mark:hover {
+  color: inherit;
+  border-bottom: 0;
+}
