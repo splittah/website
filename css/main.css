@@ -719,3 +719,13 @@ tbody tr:hover td{ background:var(--red-glow); }
 #tour .bit-widget {
   padding-bottom: 0 !important;
 }
+
+.press-bio > h3 {
+  margin: 10px 0 14px;
+  max-width: 18ch;
+  font-family: var(--display);
+  font-size: clamp(32px, 4.5vw, 54px);
+  line-height: .92;
+  letter-spacing: -.05em;
+  text-transform: uppercase;
+}
