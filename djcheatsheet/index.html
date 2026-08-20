@@ -58,11 +58,15 @@
     <summary>Navigate</summary>
 
     <ul class="site-nav__list">
-      <li><a href="/"><span class="site-nav__n">01</span> Home</a></li>
-      <li><a href="/"><span class="site-nav__n">02</span> DJ Cheatsheet</a></li>
-      <li><a href="/contact/"><span class="site-nav__n">03</span> Contact</a></li>
-      <li><a href="https://www.instagram.com/splittahmusic/" target="_blank" rel="noopener noreferrer"><span class="site-nav__n">04</span> Instagram</a></li>
-    </ul>
+            <li><a href="/"><span class="site-nav__n">01</span> Home</a></li>
+            <li><a href="/#join"><span class="site-nav__n">↳</span> Join</a></li>
+            <li><a href="/#music"><span class="site-nav__n">↳</span> Music</a></li>
+            <li><a href="/#tour"><span class="site-nav__n">↳</span> Tour</a></li>
+            <li><a href="/#about"><span class="site-nav__n">↳</span> About</a></li>
+            <li><a href="/#contact"><span class="site-nav__n">↳</span> Contact</a></li>
+            <li><a class="is-active" href="/djcheatsheet/"><span class="site-nav__n">02</span> DJ Cheatsheet</a></li>
+            <li><a href="/press/"><span class="site-nav__n">03</span> Press / EPK</a></li>
+          </ul>
   </details>
 </nav>
     </div>
@@ -835,11 +839,7 @@
     bars.innerHTML = html;
   }
 
-  /* Download as PDF — opens the browser print dialog (Save as PDF) */
-  var pdfBtn = document.getElementById('downloadPdf');
-  if(pdfBtn){
-    pdfBtn.addEventListener('click', function(){ window.print(); });
-  }
+  
 
   /* manual index scrollspy */
   var links = Array.prototype.slice.call(document.querySelectorAll('#manualindexList a'));

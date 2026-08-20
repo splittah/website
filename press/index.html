@@ -387,6 +387,29 @@
   </style>
 </head>
 
+<script>
+  // Nav menu open/close behavior. Closes the menu when clicking outside of it or pressing Escape.
+(function () {
+  const menu = document.querySelector('.site-nav__menu');
+
+  if (!menu) return;
+
+  // Close when clicking outside the navigation.
+  document.addEventListener('click', function (event) {
+    if (menu.open && !menu.contains(event.target)) {
+      menu.removeAttribute('open');
+    }
+  });
+
+  // Close when pressing Escape.
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && menu.open) {
+      menu.removeAttribute('open');
+      menu.querySelector('summary').focus();
+    }
+  });
+})();
+</script>
 <body>
 
 <!-- marquee -->
@@ -409,8 +432,7 @@
         <details class="site-nav__menu">
           <summary>Navigate</summary>
 
-          <!-- Temporary nav. We'll replace this across all pages when the
-               final site-wide nav hierarchy is built. -->
+          
           <ul class="site-nav__list">
             <li><a href="/"><span class="site-nav__n">01</span> Home</a></li>
             <li><a href="/#join"><span class="site-nav__n">↳</span> Join</a></li>
@@ -513,22 +535,21 @@
       </p>
 
       <div class="booking-actions">
-        <a
-          class="btn btn--primary"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View EPK
-        </a>
 
-        <a
-          class="btn btn--ghost"
-          href="#"
-          download
-        >
-          Download PDF
-        </a>
+      <a
+     class="btn btn--primary"
+     href="/assets/epk/Splittah-EPK.pdf"
+     target="_blank"
+     rel="noopener noreferrer"
+      >View EPK</a>
+
+     <a
+     class="btn btn--ghost"
+      href="/assets/epk/Splittah-EPK.pdf"
+      download="Splittah-EPK.pdf"
+      >Download PDF</a>
+
+</div>
       </div>
     </div>
   </section>
@@ -597,12 +618,11 @@
         </p>
 
         <a
-          class="asset-link"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Open asset folder ↗
+        class="asset-link"
+        href="https://drive.google.com/drive/folders/1L11ZQl73Rb_O8l2rcj4fmpaIYZtYRzDY?usp=drive_link"
+       target="_blank"
+       rel="noopener noreferrer"
+        > Open EPK folder ↗
         </a>
       </article>
 
@@ -613,25 +633,24 @@
 
         <h3>Club-standard booth</h3>
 
-        <p>
-          <strong>Pioneer DJ / AlphaTheta preferred.</strong>
-          Professional CDJ / XDJ players with a club-standard mixer
-          and functional booth monitors.
-        </p>
+       <p>
+       <strong>Minimum booth specification:</strong><br>
+       3 × Pioneer DJ CDJ-2000NXS2 / XDJ-1000MK2 or newer players.<br>
+       Pioneer DJ DJM-900NXS2 or newer mixer.
+       </p>
 
-        <p>
-          Final technical requirements should be confirmed directly
-          before the event.
+       <p>
+       All players must be networked via Pro DJ Link with functional booth monitoring.
+       Full technical requirements are available in the EPK folder.
         </p>
 
         <a
-          class="asset-link"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Technical information →
-        </a>
+        class="asset-link"
+        href="https://drive.google.com/drive/folders/1L11ZQl73Rb_O8l2rcj4fmpaIYZtYRzDY?usp=drive_link"
+       target="_blank"
+        rel="noopener noreferrer"
+        >Full tech rider / EPK assets ↗
+      </a>
       </article>
 
     </div>
@@ -700,7 +719,9 @@
 
         <p>
           Need a different photo crop, logo format, bio length or
-          technical detail? Email through what you need and where
+          technical detail?
+        </p>
+        <p>Email through what you need and where
           it is being used.
         </p>
       </aside>

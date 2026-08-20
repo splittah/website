@@ -729,3 +729,8 @@ tbody tr:hover td{ background:var(--red-glow); }
   letter-spacing: -.05em;
   text-transform: uppercase;
 }
+
+.site-nav__sub {
+  padding-left: 28px !important;
+  font-size: 11px;
+}
