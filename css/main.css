@@ -552,4 +552,127 @@ tbody tr:hover td{ background:var(--red-glow); }
   }
 }
 
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:0 18px;
+  gap:8px;
+  border:1px solid transparent;
+  font-weight:600;
+}
 
+.btn--primary{
+  background:var(--red);
+  color:var(--white);
+}
+
+.btn--primary:hover{
+  background:var(--red-deep);
+}
+
+.btn--ghost{
+  color:var(--white);
+  background:rgba(255,255,255,.04);
+  border-color:rgba(255,255,255,.2);
+}
+
+.btn--ghost:hover{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.38);
+}
+
+.booking-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+
+.booking-card{
+  padding:22px 24px;
+}
+
+.booking-card h3{
+  margin:10px 0;
+  font-family:var(--display);
+  font-size:24px;
+  line-height:.95;
+  letter-spacing:-.05em;
+  text-transform:uppercase;
+}
+
+.booking-card p{
+  margin:0;
+}
+
+.booking-card{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.72);
+}
+
+.booking-card .mono{
+  color:var(--amber);
+}
+
+.booking-panel{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:18px;
+}
+
+.booking-hero{
+  padding:24px;
+  color:var(--white);
+  border:1px solid rgba(255,255,255,.15);
+  background:linear-gradient(180deg, var(--panel-2), var(--panel));
+}
+
+.booking-hero h3{
+  margin:10px 0;
+  font-family:var(--display);
+  font-size:34px;
+  line-height:.92;
+  letter-spacing:-.05em;
+  text-transform:uppercase;
+}
+
+.booking-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:20px;
+}
+
+@media (max-width: 980px){
+  .booking-grid,
+  .booking-panel{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width: 640px){
+  .btn{
+    width:100%;
+  }
+}
+.contact-links{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+  margin-top:14px;
+}
+
+.contact-links a,
+.contact-link{
+  font-family:var(--mono);
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.contact-link{
+  display:inline-block;
+  margin-top:16px;
+}
