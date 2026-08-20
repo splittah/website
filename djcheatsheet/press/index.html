@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Splittah | Press / EPK</title>
+  <meta name="description" content="Official press kit for Splittah — artist bio, highlights, press photos, logos, technical information and booking contact." />
+  <meta property="og:title" content="Splittah | Press / EPK" />
+  <meta property="og:description" content="Official press kit for Splittah — bio, press assets, highlights and technical information." />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800;900&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/cheatsheet.css">
+
+  <style>
+    /* ── Press / EPK page additions ───────────────────────────────────────
+       Uses the same tokens, typography and industrial/service-manual visual
+       language as the homepage + DJ Cheatsheet. Can be moved to press.css
+       later if you want to keep all page-specific CSS external.
+    */
+
+    .press-hero__label{
+      margin-bottom:10px;
+      color:#AEB5BF;
+    }
+
+    .press-hero__sub{
+      margin:18px 0 0;
+      max-width:62ch;
+      color:#AEB5BF;
+      font-size:clamp(14px,1.7vw,16px);
+    }
+
+    .press-hero__sub strong{
+      color:#EEF1F5;
+    }
+
+    .press-main{
+      padding-bottom:clamp(56px,8vw,100px);
+    }
+
+    .press-section{
+      scroll-margin-top:84px;
+      padding-top:clamp(38px,6vw,72px);
+    }
+
+    .press-section + .press-section{
+      margin-top:clamp(34px,5vw,60px);
+      border-top:1px dashed var(--hair-strong);
+    }
+
+    .press-section__head{
+      display:grid;
+      grid-template-columns:220px minmax(0,1fr);
+      gap:26px;
+      align-items:start;
+      margin-bottom:22px;
+    }
+
+    .press-section__kicker{
+      color:var(--chalk-dim);
+    }
+
+    .press-section__title{
+      margin:0;
+      font-family:var(--display);
+      font-size:clamp(34px,5vw,68px);
+      line-height:.9;
+      letter-spacing:-.055em;
+      text-transform:uppercase;
+    }
+
+    .press-section__intro{
+      margin:12px 0 0;
+      max-width:62ch;
+      color:var(--chalk-dim);
+      font-size:17px;
+    }
+
+    .press-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+    }
+
+    .press-grid--2{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .press-card{
+      padding:22px 24px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.72);
+      box-shadow:var(--shadow);
+    }
+
+    .press-card .mono{
+      color:var(--red);
+    }
+
+    .press-card h3{
+      margin:10px 0;
+      font-family:var(--display);
+      font-size:24px;
+      line-height:.95;
+      letter-spacing:-.05em;
+      text-transform:uppercase;
+    }
+
+    .press-card p:last-child{
+      margin-bottom:0;
+    }
+
+    .press-meta{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:1px;
+      border:1px solid var(--hair-strong);
+      background:var(--hair-strong);
+    }
+
+    .press-meta__cell{
+      padding:16px;
+      background:var(--ink-2);
+    }
+
+    .press-meta__k{
+      margin-bottom:6px;
+      font-family:var(--mono);
+      font-size:9px;
+      letter-spacing:var(--tr-stamp);
+      text-transform:uppercase;
+      color:var(--chalk-faint);
+    }
+
+    .press-meta__v{
+      font-family:var(--display);
+      font-weight:900;
+      font-size:clamp(18px,2.2vw,26px);
+      line-height:.95;
+      letter-spacing:-.04em;
+      text-transform:uppercase;
+      color:var(--chalk);
+    }
+
+    .press-bio{
+      position:relative;
+      padding:clamp(24px,4vw,40px);
+      border:1px solid var(--hair-strong);
+      background:var(--ink-2);
+      box-shadow:var(--shadow);
+    }
+
+    .press-bio__tag{
+      margin-bottom:14px;
+      color:var(--red);
+    }
+
+    .press-bio--short p{
+      margin:0;
+      max-width:62ch;
+      font-family:var(--display);
+      font-size:clamp(24px,3.5vw,42px);
+      line-height:1.05;
+      letter-spacing:-.04em;
+      font-weight:800;
+    }
+
+    .press-bio--full p{
+      max-width:76ch;
+    }
+
+    .press-list{
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
+
+    .press-list li{
+      position:relative;
+      padding:12px 0 12px 20px;
+      border-bottom:1px dashed var(--hair);
+    }
+
+    .press-list li:last-child{
+      border-bottom:0;
+    }
+
+    .press-list li::before{
+      content:"›";
+      position:absolute;
+      left:0;
+      color:var(--red);
+      font-weight:700;
+    }
+
+    .asset-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+    }
+
+    .asset-card{
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:var(--ink-2);
+      box-shadow:var(--shadow);
+    }
+
+    .asset-card__preview{
+      aspect-ratio:4 / 5;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      background:
+        repeating-linear-gradient(
+          135deg,
+          var(--ink-3) 0,
+          var(--ink-3) 12px,
+          #fff 12px,
+          #fff 24px
+        );
+      border-bottom:1px solid var(--line);
+      color:var(--chalk-faint);
+      text-align:center;
+    }
+
+    .asset-card__preview--logo{
+      aspect-ratio:16 / 9;
+    }
+
+    .asset-card__body{
+      padding:18px;
+    }
+
+    .asset-card__body h3{
+      margin:8px 0 6px;
+      font-family:var(--display);
+      font-size:21px;
+      line-height:.95;
+      letter-spacing:-.045em;
+      text-transform:uppercase;
+    }
+
+    .asset-card__body p{
+      margin:0 0 14px;
+      color:var(--chalk-dim);
+      font-size:14px;
+    }
+
+    .asset-link{
+      display:inline-block;
+      font-family:var(--mono);
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+    }
+
+    .tech-panel{
+      display:grid;
+      grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+      gap:18px;
+    }
+
+    .tech-screen{
+      padding:clamp(24px,4vw,38px);
+      color:#EEF1F5;
+      border:1px solid rgba(238,241,245,.18);
+      background:linear-gradient(180deg,var(--panel-2),var(--panel));
+      box-shadow:var(--shadow);
+    }
+
+    .tech-screen .mono{
+      color:#AEB5BF;
+    }
+
+    .tech-screen h3{
+      margin:10px 0 14px;
+      color:#EEF1F5;
+      font-family:var(--display);
+      font-size:clamp(30px,4vw,46px);
+      line-height:.92;
+      letter-spacing:-.05em;
+      text-transform:uppercase;
+    }
+
+    .tech-screen p{
+      color:#AEB5BF;
+    }
+
+    .tech-screen strong{
+      color:#EEF1F5;
+    }
+
+    .press-contact{
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
+      gap:18px;
+    }
+
+    .press-contact__hero{
+      padding:clamp(26px,4vw,42px);
+      color:#EEF1F5;
+      border:1px solid rgba(238,241,245,.18);
+      background:linear-gradient(180deg,var(--panel-2),var(--panel));
+      box-shadow:var(--shadow);
+    }
+
+    .press-contact__hero h3{
+      margin:10px 0 12px;
+      color:#EEF1F5;
+      font-family:var(--display);
+      font-size:clamp(30px,4vw,46px);
+      line-height:.92;
+      letter-spacing:-.05em;
+      text-transform:uppercase;
+    }
+
+    .press-contact__hero p{
+      max-width:52ch;
+      color:#AEB5BF;
+    }
+
+    .press-contact__email{
+      display:inline-block;
+      margin-top:4px;
+      color:#EEF1F5;
+      font-family:var(--mono);
+      font-size:12px;
+      letter-spacing:.04em;
+      border-bottom-color:rgba(238,241,245,.35);
+    }
+
+    .press-contact__email:hover{
+      color:#fff;
+      border-bottom-color:#fff;
+    }
+
+    .press-note{
+      padding:22px 24px;
+      border:1px solid var(--hair-strong);
+      background:var(--ink-3);
+    }
+
+    .press-note h3{
+      margin:10px 0;
+      font-family:var(--display);
+      font-size:24px;
+      line-height:.95;
+      letter-spacing:-.05em;
+      text-transform:uppercase;
+    }
+
+    @media(max-width:980px){
+      .press-section__head,
+      .tech-panel,
+      .press-contact{
+        grid-template-columns:1fr;
+      }
+
+      .press-grid,
+      .asset-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+
+      .press-meta{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+    }
+
+    @media(max-width:640px){
+      .press-grid,
+      .press-grid--2,
+      .asset-grid,
+      .press-meta{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- marquee -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span><b>SPLITTAH</b> // PRESS KIT // MULUBINBA · NEWCASTLE // DRUM &amp; BASS // DUBSTEP // 140 // ALL GAS, NO GENRE // PRESS KIT //</span>
+    <span><b>SPLITTAH</b> // PRESS KIT // MULUBINBA · NEWCASTLE // DRUM &amp; BASS // DUBSTEP // 140 // ALL GAS, NO GENRE // PRESS KIT //</span>
+  </div>
+</div>
+
+<!-- nav -->
+<header class="nav">
+  <div class="wrap nav__row">
+    <a class="nav__mark" href="/"><span class="pulse">●</span> Splittah | Press / EPK</a>
+
+    <div class="nav__meta">
+      <span class="stamp">ARTIST FILE</span>
+
+      <nav class="site-nav" aria-label="Site navigation">
+        <details class="site-nav__menu">
+          <summary>Navigate</summary>
+
+          <!-- Temporary nav. We'll replace this across all pages when the
+               final site-wide nav hierarchy is built. -->
+          <ul class="site-nav__list">
+            <li><a href="/"><span class="site-nav__n">01</span> Home</a></li>
+            <li><a href="/#join"><span class="site-nav__n">↳</span> Join</a></li>
+            <li><a href="/#music"><span class="site-nav__n">↳</span> Music</a></li>
+            <li><a href="/#tour"><span class="site-nav__n">↳</span> Tour</a></li>
+            <li><a href="/#about"><span class="site-nav__n">↳</span> About</a></li>
+            <li><a href="/#contact"><span class="site-nav__n">↳</span> Contact</a></li>
+            <li><a href="/djcheatsheet/"><span class="site-nav__n">02</span> DJ Cheatsheet</a></li>
+            <li><a class="is-active" href="/press/"><span class="site-nav__n">03</span> Press / EPK</a></li>
+          </ul>
+        </details>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__eyebrow">
+      <span class="dot-live">PRESS FILE</span>
+      <span class="stamp">ARTIST · SPLITTAH</span>
+      <span class="stamp">MULUBINBA / NEWCASTLE / AUSTRALIA</span>
+    </div>
+
+    <div class="deck corners">
+      <div class="deck__loadrow">
+        <span class="stamp">NOW LOADED — <span class="deck__chan">EPK</span></span>
+        <span class="stamp">OFFICIAL ARTIST ASSETS · CURRENT</span>
+      </div>
+
+      <div class="press-hero__label mono">PRESS / ELECTRONIC PRESS KIT</div>
+      <h1>SPLITTAH<br><em>PRESS FILE</em></h1>
+
+      <p class="press-hero__sub">
+        Bio, highlights, artist assets and technical information for promoters,
+        venues, media and collaborators. <strong>All gas, no genre.</strong>
+      </p>
+
+      <!-- waveform -->
+      <svg class="wave" viewBox="0 0 1000 80" preserveAspectRatio="none" role="img" aria-label="Decorative track waveform">
+        <defs>
+          <linearGradient id="wv" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#2E6FD0"/>
+            <stop offset=".55" stop-color="#5AA6FF"/>
+            <stop offset=".56" stop-color="#FFB23E"/>
+            <stop offset="1" stop-color="#FFB23E"/>
+          </linearGradient>
+        </defs>
+        <g id="bars" fill="url(#wv)"></g>
+        <rect x="556" y="0" width="2" height="80" fill="#E9F1EC" opacity=".75"/>
+      </svg>
+
+      <div class="readout">
+        <div class="readout__cell">
+          <div class="readout__k">BASE</div>
+          <div class="readout__v">NEWY</div>
+        </div>
+        <div class="readout__cell">
+          <div class="readout__k">YEARS</div>
+          <div class="readout__v is-go">10</div>
+        </div>
+        <div class="readout__cell">
+          <div class="readout__k">MODE</div>
+          <div class="readout__v">BASS</div>
+        </div>
+        <div class="readout__cell">
+          <div class="readout__k">ENERGY</div>
+          <div class="readout__v is-warn">ALL GAS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN -->
+<main class="wrap press-main">
+
+  <!-- 01 / Snapshot -->
+  <section class="press-section" id="snapshot">
+    <div class="press-section__head">
+      <div class="press-section__kicker mono">01 / Snapshot</div>
+      <div>
+        <h2 class="press-section__title">At a glance</h2>
+        <p class="press-section__intro">
+          The quick version for promoters, listings and anyone who needs the important shit first.
+        </p>
+      </div>
+    </div>
+
+    <div class="press-meta">
+      <div class="press-meta__cell">
+        <div class="press-meta__k">Artist</div>
+        <div class="press-meta__v">Splittah</div>
+      </div>
+      <div class="press-meta__cell">
+        <div class="press-meta__k">Based</div>
+        <div class="press-meta__v">Newcastle</div>
+      </div>
+      <div class="press-meta__cell">
+        <div class="press-meta__k">Sound</div>
+        <div class="press-meta__v">Bass Music</div>
+      </div>
+      <div class="press-meta__cell">
+        <div class="press-meta__k">Approach</div>
+        <div class="press-meta__v">All Gas</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 / Bio -->
+  <section class="press-section" id="bio">
+    <div class="press-section__head">
+      <div class="press-section__kicker mono">02 / Bio</div>
+      <div>
+        <h2 class="press-section__title">Artist bio</h2>
+        <p class="press-section__intro">
+          Short version for listings. Full version for promoters, media and anywhere a bit more context helps.
+        </p>
+      </div>
+    </div>
+
+    <div class="press-bio press-bio--short corners">
+      <div class="press-bio__tag mono">Short bio / Copy this</div>
+      <p>
+        Splittah is a Mulubinba (Newcastle) based DJ with ten years behind the decks,
+        an all gas, no genre approach and a reputation for high-energy sets built around
+        reading the room and keeping it moving.
+      </p>
+    </div>
+
+    <div style="height:18px"></div>
+
+    <div class="press-bio press-bio--full corners">
+      <div class="press-bio__tag mono">Full bio</div>
+
+      <p>
+        Splittah is a Mulubinba (Newcastle) based DJ with ten years behind the decks and
+        an all gas, no genre approach to the dancefloor. Known for high-energy selections
+        and seamless blends, he moves fluidly through drum and bass, dubstep and 140,
+        with the freedom to take a set wherever the room needs it to go.
+      </p>
+
+      <p>
+        From sweaty club nights to festival stages, Splittah has played venues including
+        Ivy, Home the Venue and The Burdekin in Eora (Sydney), Argyle House and the
+        Lass O’ Gowrie in Mulubinba (Newcastle), the Oxford in Wahluu (Bathurst), and
+        The Grand in Dharawal Country (Wollongong). Along the way, he has appeared on
+        lineups with crews including Bassaus, Steppers, Heaps Of, Courtyard,
+        House of Traxx, Uno-Palooza, Rhythm at Dusk and Kicked Sundays, while sharing
+        stages with artists including ShockOne, Calcium, Solomon France and Slumberjack.
+      </p>
+
+      <p>
+        A career highlight came with a set at Fiji’s Your Paradise festival. Whether it is
+        a club, festival or late-night party, the approach stays the same: tight selections,
+        serious energy and a willingness to take the set wherever the room wants to go.
+      </p>
+    </div>
+  </section>
+
+  <!-- 03 / Highlights -->
+  <section class="press-section" id="highlights">
+    <div class="press-section__head">
+      <div class="press-section__kicker mono">03 / Highlights</div>
+      <div>
+        <h2 class="press-section__title">Selected credits</h2>
+        <p class="press-section__intro">
+          Enough receipts to know what the deal is without turning this page into a LinkedIn profile.
+        </p>
+      </div>
+    </div>
+
+    <div class="press-grid">
+      <article class="press-card">
+        <div class="mono">Festival</div>
+        <h3>Your Paradise</h3>
+        <p>Fiji festival appearance and a career highlight.</p>
+      </article>
+
+      <article class="press-card">
+        <div class="mono">Shared stages</div>
+        <h3>Artist support</h3>
+        <p>ShockOne · Calcium · Solomon France · Slumberjack</p>
+      </article>
+
+      <article class="press-card">
+        <div class="mono">Rooms</div>
+        <h3>Selected venues</h3>
+        <p>Ivy · Home the Venue · The Burdekin · Argyle House · Lass O’ Gowrie · Oxford · The Grand</p>
+      </article>
+    </div>
+
+    <div style="height:16px"></div>
+
+    <div class="press-grid press-grid--2">
+      <article class="press-card">
+        <div class="mono">Sound</div>
+        <h3>Bass without the box</h3>
+        <p>
+          Drum and bass, dubstep and 140 sit at the centre, but the set is driven by the
+          room rather than a genre rulebook.
+        </p>
+      </article>
+
+      <article class="press-card">
+        <div class="mono">Crews / Lineups</div>
+        <h3>Selected appearances</h3>
+        <ul class="press-list">
+          <li>Bassaus</li>
+          <li>Steppers</li>
+          <li>Heaps Of</li>
+          <li>Courtyard</li>
+          <li>House of Traxx</li>
+          <li>Uno-Palooza</li>
+          <li>Rhythm at Dusk</li>
+          <li>Kicked Sundays</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- 04 / Press photos -->
+  <section class="press-section" id="photos">
+    <div class="press-section__head">
+      <div class="press-section__kicker mono">04 / Photos</div>
+      <div>
+        <h2 class="press-section__title">Press photos</h2>
+        <p class="press-section__intro">
+          Replace these placeholders with approved high-resolution press images and point each download link at the original file.
+        </p>
+      </div>
+    </div>
+
+    <div class="asset-grid">
+      <article class="asset-card">
+        <div class="asset-card__preview">
+          <div>
+            <div class="mono">PHOTO 01</div>
+            <strong>PORTRAIT PLACEHOLDER</strong>
+          </div>
+        </div>
+        <div class="asset-card__body">
+          <div class="mono">Portrait</div>
+          <h3>Press photo 01</h3>
+          <p>Add photographer credit here.</p>
+          <a class="asset-link" href="#" download>Download high-res →</a>
+        </div>
+      </article>
+
+      <article class="asset-card">
+        <div class="asset-card__preview">
+          <div>
+            <div class="mono">PHOTO 02</div>
+            <strong>LIVE PLACEHOLDER</strong>
+          </div>
+        </div>
+        <div class="asset-card__body">
+          <div class="mono">Live</div>
+          <h3>Press photo 02</h3>
+          <p>Add photographer credit here.</p>
+          <a class="asset-link" href="#" download>Download high-res →</a>
+        </div>
+      </article>
+
+      <article class="asset-card">
+        <div class="asset-card__preview">
+          <div>
+            <div class="mono">PHOTO 03</div>
+            <strong>LANDSCAPE PLACEHOLDER</strong>
+          </div>
+        </div>
+        <div class="asset-card__body">
+          <div class="mono">Landscape</div>
+          <h3>Press photo 03</h3>
+          <p>Add photographer credit here.</p>
+          <a class="asset-link" href="#" download>Download high-res →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 05 / Logos -->
+  <section class="press-section" id="logos">
+    <div class="press-section__head">
+      <div class="press-section__kicker mono">05 / Logos</div>
+      <div>
+        <h2 class="press-section__title">Logos / Marks</h2>
+        <p class="press-section__intro">
+          Approved artwork only. Drop your actual SVG / PNG files in here once the asset paths are final.
+        </p>
+      </div>
+    </div>
+
+    <div class="asset-grid">
+      <article class="asset-card">
+        <div class="asset-card__preview asset-card__preview--logo">
+          <strong>SPLITTAH / BLACK</strong>
+        </div>
+        <div class="asset-card__body">
+          <div class="mono">Logo</div>
+          <h3>Dark mark</h3>
+          <p>For light backgrounds.</p>
+          <a class="asset-link" href="#" download>Download SVG →</a>
+        </div>
+      </article>
+
+      <article class="asset-card">
+        <div class="asset-card__preview asset-card__preview--logo" style="background:#14161B;color:#EEF1F5">
+          <strong>SPLITTAH / WHITE</strong>
+        </div>
+        <div class="asset-card__body">
+          <div class="mono">Logo</div>
+          <h3>Light mark</h3>
+          <p>For dark backgrounds.</p>
+          <a class="asset-link" href="#" download>Download SVG →</a>
+        </div>
+      </article>
+
+      <article class="asset-card">
+        <div class="asset-card__preview asset-card__preview--logo">
+          <strong>SPLITTAH / RED</strong>
+        </div>
+        <div class="asset-card__body">
+          <div class="mono">Logo</div>
+          <h3>Brand mark</h3>
+          <p>Accent version using Splittah red.</p>
+          <a class="asset-link" href="#" download>Download SVG →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 06 / Technical -->
+  <section class="press-section" id="technical">
+    <div class="press-section__head">
+      <div class="press-section__kicker mono">06 / Technical</div>
+      <div>
+        <h2 class="press-section__title">Technical</h2>
+        <p class="press-section__intro">
+          Basic booth information for promoters. Keep the full rider downloadable if and when you need something more formal.
+        </p>
+      </div>
+    </div>
+
+    <div class="tech-panel">
+      <article class="tech-screen corners">
+        <div class="mono">Preferred setup</div>
+        <h3>Club-standard booth</h3>
+        <p>
+          <strong>Pioneer DJ / AlphaTheta preferred.</strong> Professional CDJ / XDJ
+          players with a club-standard mixer and working booth monitors.
+        </p>
+        <p>
+          Final technical requirements should be confirmed directly before the event.
+        </p>
+      </article>
+
+      <article class="press-card">
+        <div class="mono">Promoter notes</div>
+        <h3>Before the set</h3>
+        <ul class="press-list">
+          <li>Confirm exact player and mixer models before the event.</li>
+          <li>Ensure all players are networked correctly where Pro DJ Link is available.</li>
+          <li>Provide clear, functional booth monitoring.</li>
+          <li>Advise in advance if the booth setup differs materially from standard Pioneer DJ / AlphaTheta club equipment.</li>
+        </ul>
+        <a class="asset-link" href="#" download style="margin-top:16px">Download tech rider →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- 07 / Contact -->
+  <section class="press-section" id="contact">
+    <div class="press-section__head">
+      <div class="press-section__kicker mono">07 / Contact</div>
+      <div>
+        <h2 class="press-section__title">Bookings / Enquiries</h2>
+      </div>
+    </div>
+
+    <div class="press-contact">
+      <article class="press-contact__hero corners">
+        <div class="mono" style="color:#AEB5BF">Contact</div>
+        <h3>Want Splittah on your lineup?</h3>
+
+        <p>
+          For bookings, collaborations, media and general enquiries, get in touch.
+        </p>
+
+        <a class="press-contact__email" href="mailto:hello@splittah.com.au">
+          hello@splittah.com.au
+        </a>
+
+        <div class="booking-actions">
+          <a class="btn btn--primary" href="mailto:hello@splittah.com.au">Email Splittah</a>
+          <a class="btn btn--ghost" href="https://www.instagram.com/splittahmusic/" target="_blank" rel="noopener noreferrer">DM on Instagram</a>
+        </div>
+      </article>
+
+      <aside class="press-note">
+        <div class="mono">Asset use</div>
+        <h3>Need something else?</h3>
+        <p>
+          If you need a different photo crop, logo format, bio length or technical detail,
+          email through what you need and where it is being used.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <h2>Splittah</h2>
+      <p>Mulubinba / Newcastle, Australia</p>
+      <p><a href="https://www.instagram.com/splittahmusic/" target="_blank" rel="noopener noreferrer">@splittahmusic</a></p>
+    </div>
+
+    <div class="foot__meta">
+      <div class="row"><span class="k">Document</span><span class="v">Press / EPK</span></div>
+      <div class="row"><span class="k">Artist</span><span class="v">Splittah</span></div>
+      <div class="row"><span class="k">Contact</span><span class="v">hello@splittah.com.au</span></div>
+      <div class="row"><span class="k">Status</span><span class="v"><span class="pulse">●</span> Current</span></div>
+    </div>
+  </div>
+
+  <div class="wrap colophon">
+    <span class="stamp">SPLITTAH · OFFICIAL PRESS FILE</span>
+    <span class="stamp">ALL GAS · NO GENRE</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* Same deterministic waveform language as the DJ Cheatsheet. */
+  var bars = document.getElementById('bars');
+
+  if(bars){
+    var n = 120, w = 1000/n, html = '', seed = 7;
+
+    for(var i=0;i<n;i++){
+      seed = (seed*9301 + 49297) % 233280;
+      var r = seed/233280;
+      var env = 0.35 + 0.65*Math.abs(Math.sin(i/n*Math.PI*2.2));
+      var h = (8 + r*64) * env;
+      var x = i*w + w*0.18;
+      var y = 40 - h/2;
+
+      html += '<rect x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+(w*0.64).toFixed(1)+'" height="'+h.toFixed(1)+'" rx="0.5"/>';
+    }
+
+    bars.innerHTML = html;
+  }
+})();
+</script>
+
+</body>
+</html>
