@@ -714,3 +714,8 @@ tbody tr:hover td{ background:var(--red-glow); }
     width:100%;
   }
 }
+
+/* Tour section bandsintown widget padding-bottom fix */
+#tour .bit-widget {
+  padding-bottom: 0 !important;
+}
