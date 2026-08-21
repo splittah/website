@@ -457,11 +457,41 @@ tbody tr:hover td{ background:var(--red-glow); }
 .foot h2{ font-family:var(--display); font-weight:900; text-transform:uppercase;
   letter-spacing:var(--tr-tight); font-size:clamp(26px,4vw,40px); margin:0 0 14px; line-height:.92; }
 .foot p{ color:var(--chalk-dim); max-width:54ch; }
-.foot__meta{ display:flex; flex-direction:column; gap:12px; }
-.foot__meta .row{ display:flex; justify-content:space-between; gap:14px; padding:9px 0;
-  border-bottom:1px dashed var(--hair); font-family:var(--mono); font-size:12px; }
-.foot__meta .row .k{ color:var(--chalk-faint); letter-spacing:.08em; text-transform:uppercase; font-size:10px; }
-.foot__meta .row .v{ color:var(--chalk); text-align:right; }
+.foot__meta,
+.foot__socials {
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+
+.foot__meta .row,
+.foot__socials .row {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  min-height:44px;
+  padding:9px 0;
+
+  border-bottom:1px dashed var(--hair);
+
+  font-family:var(--mono);
+  font-size:12px;
+}
+
+.foot__meta .row .k,
+.foot__socials .row .k {
+  color:var(--chalk-faint);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-size:10px;
+}
+
+.foot__meta .row .v,
+.foot__socials .row .v {
+  color:var(--chalk);
+  text-align:right;
+}
 .colophon{ margin-top:34px; padding-top:22px; border-top:1px dashed var(--hair);
   display:flex; flex-wrap:wrap; gap:14px 26px; justify-content:space-between; align-items:center; }
 .colophon .stamp{ color:var(--chalk-faint); }
@@ -743,29 +773,4 @@ tbody tr:hover td{ background:var(--red-glow); }
 .nav__mark:hover {
   color: inherit;
   border-bottom: 0;
-}
-
-.foot__socials .row {
-  display:flex;
-  justify-content:space-between;
-  gap:14px;
-  padding:9px 0;
-  border-bottom:1px dashed var(--hair);
-  font-family:var(--mono);
-  font-size:12px;
-}
-
-.foot__socials .row .k {
-  color:var(--chalk-faint);
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  font-size:10px;
-}
-
-.foot__socials .row .v {
-  text-align:right;
-}
-
-.foot__socials h2 {
-  margin-bottom:14px;
 }
