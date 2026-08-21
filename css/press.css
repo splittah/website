@@ -1,14 +1,14 @@
 
 .btn--ghost-light {
-  color: var(--ink);
-  border-color: rgba(17, 20, 26, .35);
+  color: var(--chalk);
+  border-color: var(--line-strong);
   background: transparent;
 }
 
 .btn--ghost-light:hover {
-  color: var(--paper);
-  background: var(--ink);
-  border-color: var(--ink);
+  color: #fff;
+  background: var(--chalk);
+  border-color: var(--chalk);
 }
 
 .press-hero__label{
