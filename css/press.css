@@ -319,7 +319,7 @@
       display:inline-block;
      margin-top:4px;
   color:var(--red);
-  font-family:var(--mono);
+  font-family:var(--body);
   font-size:12px;
   letter-spacing:.04em;
   border-bottom-color:var(--red);
