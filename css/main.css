@@ -750,6 +750,16 @@ tbody tr:hover td{ background:var(--red-glow); }
   padding-bottom: 0 !important;
 }
 
+/* Tour section bandsintown widget link underline fix */
+#tour .bit-widget a {
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+}
+
+#tour .bit-widget a:hover {
+  border-bottom: 0 !important;
+}
+
 .press-bio > h3 {
   margin: 10px 0 14px;
   max-width: 18ch;
